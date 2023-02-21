@@ -1,0 +1,28 @@
+name: llm4b
+
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+
+dependencies:
+  - python=3.8
+  - pip>22.2
+  #  - conda-forge::cudatoolkit-dev=11.3
+  #  - conda-forge::cudnn=8.2
+  - numpy
+  - scipy
+  - pytorch::pytorch=1.13.1
+  - pytorch::torchvision
+  - pytorch::torchaudio
+
+  - pip:
+      - transformers
+      - datasets
+      - timm
+      - einops
+      - openai
+      - scikit-learn
+      - pandas
+      - matplotlib
+      - seaborn
